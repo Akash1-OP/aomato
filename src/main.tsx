@@ -10,7 +10,7 @@ import { SocketProvider } from "./context/SocketContext.tsx";
 export const authService = "https://aomato-auth.onrender.com";
 export const restaurantService = "https://aomato-restaurant.onrender.com";
 export const utilsService = "https://aomato-utils.onrender.com";
-export const realtimeService = "https://aomato-realtime.onrender.com";
+export const realtimeService = "https://aomato-realtime.onrender.com/";
 export const riderService = "https://aomato-rider.onrender.com";
 export const adminService = "https://aomato-admin.onrender.com";
 
