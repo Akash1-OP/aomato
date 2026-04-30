@@ -20,7 +20,7 @@ const Checkout = () => {
   const [addresses, setAddresses] = useState<Address[]>([]);
 
   const [selectedAddressId, setselectedAddressId] = useState<string | null>(
-    null,
+    null
   );
 
   const [loadingAddress, setLoadingAddress] = useState(true);
@@ -43,7 +43,7 @@ const Checkout = () => {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
             },
-          },
+          }
         );
 
         setAddresses(data || []);
@@ -90,7 +90,7 @@ const Checkout = () => {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
-        },
+        }
       );
 
       return data;
@@ -171,7 +171,7 @@ const Checkout = () => {
           `${utilsService}/api/payment/stripe/create`,
           {
             orderId,
-          },
+          }
         );
 
         if (data.url) {
